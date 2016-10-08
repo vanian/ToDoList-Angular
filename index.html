@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo list Angular</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  </head>
+  <body ng-app class="container jumbotron">
+		<div class="todo-wrapper" ng-controller="TodoCtrl">
+      <h2>You've got <span class="emphasis">{{getTotalTodos()}}</span> things to do</h2> <hr>
+       <ul class="list-group main">
+       <blockquote> <li ng-repeat="todo in todos" class="list-group-item" id="checking">
+          <input type="checkbox" ng-model="todo.done" id="lists"/>
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li></blockquote>
+				</ul> 
+      <form>
+        <input class="add-input" placeholder="Have to.." type="text" ng-model="formTodoText" ng-model-instant />
+        <button class="add-btn btn btn-primary" ng-click="addTodo()">Add</button>
+      </form>
+      <hr>
+      <button class="btn btn-primary" ng-click="clearCompleted()">Show all </button>
+			 <button class="btn btn-primary" ng-click="clearCompleted()">Completed</button>
+			 <button class="btn btn-primary" ng-click="clearCompleted()">Active</button>
+			<button class="btn btn-primary" ng-click="clearCompleted()">Clear the list</button>
+    </div>
+  </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>

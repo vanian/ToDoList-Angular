@@ -1,0 +1,17 @@
+body{
+	background: url("http://clipartsign.com/upload/2016/03/01/sticky-note-fast-downloads-clipart.jpg");
+	  background-size: 100%;
+}
+.jumbotron{
+	position:fixed;
+	top:100px; 
+	left:130px;
+}
+ul{
+	list-style: none;
+	width:80%;
+}
+li:hover{
+	color:gray;
+border-right: 5px solid #CF9840;	
+}
